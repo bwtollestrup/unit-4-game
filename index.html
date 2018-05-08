@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wine Not?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Wine Not?</h1>
+            <p class="lead">uncork and unwind.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="instructions">
+                    <h2>Game Instructions</h2>
+                    <hr>
+                    <p>You will be given a random number at the start of each game.</p>
+
+                    <p>There are four glasses of wine below. By clicking on a glass you will add a specific amount of points
+                        to your score.</p>
+
+                    <p>You will win the game by matching your score to the random number. You lose the game if your score goes
+                        above the random number.</p>
+
+                    <p>The value of each glass is hidden from you until you click on it.</p>
+
+                    <p>Each time when the game starts, the game will change the value of each glass.</p>
+                    <hr>
+                    </br>
+                    <p>
+                        <b>Pour yourself a glass of wine and enjoy!</b>
+                    </p>
+                    </br>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Random Number
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span id="randomNum">
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Sparkling, Red, White, or Rose?
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <span id="champagne">
+                                            <img src="Assets/Images/Champagne.jpg" alt="Sparkling" width="150px" height="150px">
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span id="red">
+                                            <img src="Assets/Images/Red.jpg" alt="Red Wine" width="150px" height="150px">
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span id="white">
+                                            <img src="Assets/Images/White.jpg" alt="White Wine" width="150px" height="150px">
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span id="rose">
+                                            <img src="Assets/Images/Rose.jpeg" alt="Rose" width="150px" height="150px">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Score
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span id="score">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Wins
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span id="winCount">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Losses
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span id="lossCount">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Javascript/game.js"></script>
+</body>
+
+</html>
