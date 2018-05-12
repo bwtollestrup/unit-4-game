@@ -7,3 +7,13 @@
     text-align: center;
     font-weight: lighter;
 }
+
+.wineGlasses {
+    width: 150px;
+    height: 150px;
+}
+
+#randomNum, #score, #winCount, #lossCount {
+    font-weight: bold;
+    text-align: center;
+}
